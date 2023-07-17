@@ -24,7 +24,14 @@ Base.metadata.create_all(bind=engine)
 @app.get("/", tags=["Home"])
 def home():
     # responde un elemento HTML
-    return HTMLResponse("<h1>Home</h1>")
+    return HTMLResponse(
+        """
+                        <div>
+                            <h1>API con FastAPI</h1>
+                            <p>Para más información visita la documentación: <a href="/docs">en este link</a></p>
+                        </div>
+        """
+    )
 
 
 if __name__ == "__main__":
