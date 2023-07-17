@@ -1,5 +1,5 @@
 import typing
-from starlette.middleware.base import BaseHTTPMiddleware, DispatchFunction
+from starlette.middleware.base import BaseHTTPMiddleware
 from fastapi import FastAPI, Request, Response
 from fastapi.responses import JSONResponse
 
