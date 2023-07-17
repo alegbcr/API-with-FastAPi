@@ -14,4 +14,3 @@ def login(user: User):
     if user.email == "admin@example.com" and user.password == "admin":
         token: str = create_token(user.dict())
         return JSONResponse(status_code=200, content=token)
-    # Valida el token
